@@ -27,7 +27,7 @@ zavolejte a vypište výsledek.*/
             int a1 = (int)numericUpDown1.Value;
             int a2 = (int)numericUpDown2.Value;
             int n = (int)numericUpDown3.Value;
-            if (!(a1 < a2)) { return; }
+            //if (!(a1 < a2)) { return; }
             double d = (double)a2 / (double)a1;
             list.Add(a1.ToString());
             for (int i = 0; i < n; i++)
