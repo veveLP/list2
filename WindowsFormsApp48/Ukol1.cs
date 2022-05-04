@@ -34,7 +34,7 @@ posloupnosti. Zavolejte metodu a seznam vypište.*/
             {
                 list.Add((Int32.Parse(list.Last()) + d).ToString());
             }
-            listBox1.Items.AddRange(list.ToArray());
+            vypis(list, listBox1);
             button1.Enabled = false;
             button2.Enabled = true;
             button3.Enabled = true;
@@ -57,12 +57,17 @@ posloupnosti. Zavolejte metodu a seznam vypište.*/
                 list.Add((Int32.Parse(list.Last()) + d).ToString());
             }
             listBox1.Items.Clear();
-            listBox1.Items.AddRange(list.ToArray());
+            vypis(list, listBox1);
         }
 
         private void Ukol1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void vypis(List<String> list, ListBox listBox)
+        {
+            listBox.Items.AddRange(list.ToArray());
         }
     }
 }
